@@ -11,15 +11,22 @@
 *{
     margin:0;
     padding:0;
-    background-color: var(--gunmetal);
-    font-family: Roboto, serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--raisin-black);
 }
+
+body.night{
+    background-color: var(--raisin-black);
+    color: var(--white);
+}
+
+
 main{
     margin-top:20px;
     display: flex;
@@ -28,21 +35,39 @@ main{
 }
 
 #print_number{
-    background-color: var(--raisin-black);
+
     display: flex;
     flex-direction: column;
 }
 
 #selectors{
+    background-color: var(--cultured);
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+#selectors.night{
     background-color: var(--gunmetal);
 }
 
 .number{
-    color: var(--white);
-    background-color: var(--raisin-black);
+
     border-radius: 10px;
     width: 20px;
     height: auto;
+}
+
+.button{
+    background-color: var(--white);
+
+}
+
+.button.night{
+    background-color: var(--raisin-black);
+}
+.row p{
+    margin: 5px 5px;
+    text-align: center;
 }
 
 .number_calculator{
@@ -54,7 +79,7 @@ main{
 
 .main_operators{
     color: var(--light-coral);
-    background-color: var(--raisin-black);
+
     border-radius: 10px;
     width: 20px;
     height: auto;
@@ -66,7 +91,6 @@ main{
 
 .secondary_operators{
     color: var(--sea-green-crayola);
-    background-color: var(--raisin-black);
     border-radius: 10px;
     width: 20px;
     height: auto;

@@ -3,51 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculatrice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="calculatrice.css"/>
+    <link rel="stylesheet" href="dark_mode.css"/>
     <script src="calculatrice.js" defer></script>
+    <script src="dark_mode.js" defer></script>
 </head>
 <body>
     <!--  TODO : Structure HTML -->
+
+        <section id="dark_mode_selector">
+            <img src="day-and-night.png" alt="moon" id="switcher">
+        </section>
     <main>
         <section id="print_number">
             <div class="screen">
-                <span style="color: white"></span>
+                <span>0.00</span>
             </div>
         </section>
 
         <section id="selectors">
             <div class="row">
-                <p class="secondary_operators clear">AC</p>
-                <p class="secondary_operators">+/-</p>
-                <p class="secondary_operators">%</p>
-                <p data-key="/" class="main_operators">÷</p>
+                <p class="secondary_operators clear button">AC</p>
+                <p class="secondary_operators button">+/-</p>
+                <p class="secondary_operators button">%</p>
+                <p data-key="/" class="main_operators button">÷</p>
             </div>
 
             <div class="row">
-                <p data-key="7" class="number">7</p>
-                <p data-key="8" class="number">8</p>
-                <p data-key="9" class="number">9</p>
-                <p data-key="*" class="main_operators">X</p>
+                <p data-key="7" class="number button">7</p>
+                <p data-key="8" class="number button">8</p>
+                <p data-key="9" class="number button">9</p>
+                <p data-key="*" class="main_operators button">X</p>
             </div>
 
             <div class="row">
-                <p data-key="4" class="number">4</p>
-                <p data-key="5" class="number">5</p>
-                <p data-key="6" class="number">6</p>
-                <p data-key="-" class="main_operators">-</p>
+                <p data-key="4" class="number button">4</p>
+                <p data-key="5" class="number button">5</p>
+                <p data-key="6" class="number button">6</p>
+                <p data-key="-" class="main_operators button">-</p>
             </div>
 
             <div class="row">
-                <p data-key="1" class="number">1</p>
-                <p data-key="2" class="number">2</p>
-                <p data-key="3" class="number">3</p>
-                <p data-key="+" class="main_operators">+</p>
+                <p data-key="1" class="number button">1</p>
+                <p data-key="2" class="number button">2</p>
+                <p data-key="3" class="number button">3</p>
+                <p data-key="+" class="main_operators button">+</p>
             </div>
 
             <div class="row">
-                <p class="number">0</p>
-                <p data-key="." class="number">.</p>
-                <p data-key="=" class="main_operators">=</p>
+                <p class="number button">0</p>
+                <p data-key="." class="number button">.</p>
+                <p data-key="=" class="main_operators button">=</p>
             </div>
         </section>
     </main>

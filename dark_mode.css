@@ -1,0 +1,25 @@
+#dark_mode_selector{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    background-color: var(--cultured);
+    padding: 10px 10px;
+    border-radius:10px;
+    width:20%;
+    margin-top:20px;
+}
+
+#dark_mode_selector.night{
+    background-color: var(--gunmetal);
+}
+
+#switcher{
+    width: 75%;
+    height: auto;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#switcher.night{
+    filter:invert(100%);
+}
